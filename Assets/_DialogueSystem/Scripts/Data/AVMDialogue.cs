@@ -6,9 +6,9 @@ namespace Axvemi.DialogueSystem
     /// Scriptable Object for the Dialogue assets
     /// </summary>
     [CreateAssetMenu(fileName = "Dialogue", menuName = "Axvemi/DialogueSystem/Dialogue")]
-    public class Dialogue : ScriptableObject
+    public class AVMDialogue : ScriptableObject
     {
-        public DialogueLine[] Lines = null;
+        public AVMDialogueLine[] Lines = null;
 
     }
 
@@ -16,8 +16,8 @@ namespace Axvemi.DialogueSystem
     /// Dialogue line
     /// </summary>
     [System.Serializable]
-    public class DialogueLine{
+    public class AVMDialogueLine{
         public string Line = string.Empty;
-        public Speaker Speaker = null;
+        public AVMSpeaker Speaker = null;
     }
 }

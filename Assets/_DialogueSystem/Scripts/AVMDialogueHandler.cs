@@ -6,18 +6,18 @@ namespace Axvemi.DialogueSystem
     /// <summary>
     /// Handler of the conversation and the conversation flow
     /// </summary>
-    public class DialogueHandler : MonoBehaviour
+    public class AVMDialogueHandler : MonoBehaviour
     {
         /// <summary>
         /// Dialogue being used in the DialogueHandler
         /// </summary>
-        public Dialogue ActiveDialogue = null;
+        public AVMDialogue ActiveDialogue = null;
         [HideInInspector] public int ActualLine = 0;
 
         #region ACTIONS
-        public Action<Dialogue> onDialogueStarted;
-        public Action<Dialogue> onDialogueFinished;
-        public Action<DialogueLine> onNextLine;
+        public Action<AVMDialogue> onDialogueStarted;
+        public Action<AVMDialogue> onDialogueFinished;
+        public Action<AVMDialogueLine> onNextLine;
         #endregion
 
 
